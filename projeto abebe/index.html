@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Caminho CORRETO para o CSS -->
+    <link rel="stylesheet" href="abuebe.css">
+
+    <title>PROESP – Avaliação</title>
+</head>
+<body>
+
+<div class="card" id="triagem">
+  <h1>Triagem Inicial</h1>
+  <p class="sub">Preencha os dados iniciais conforme o Manual PROESP (opção A).</p>
+
+  <form id="form-triagem">
+    <fieldset>
+      <legend>1. Identificação</legend>
+
+      <div class="input-group">
+        <label for="nome">Nome completo</label>
+        <input id="nome" type="text">
+        <small class="msg" id="msg-nome"></small>
+      </div>
+
+      <div class="input-group">
+        <label for="nasc">Data de nascimento</label>
+        <input id="nasc" type="date">
+        <small class="msg" id="msg-nasc"></small>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>2. PAR-Q (simulado)</legend>
+
+      <label><input type="radio" name="parq" id="parq-sim"> Sim</label>
+      <br>
+      <label><input type="radio" name="parq" id="parq-nao"> Não</label>
+    </fieldset>
+
+    <button class="btn btn-primary" type="submit">Avançar</button>
+    <button type="button" class="btn btn-sec" id="simular-triagem">Simular</button>
+  </form>
+
+  <div id="global"></div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>

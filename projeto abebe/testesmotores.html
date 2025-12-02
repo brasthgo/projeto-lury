@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Caminho CORRETO para o CSS -->
+    <link rel="stylesheet" href="abuebe.css">
+
+    <title>PROESP – Avaliação</title>
+</head>
+
+<body>
+<div class="card" id="motores">
+  <h1>Testes Motores</h1>
+  <p class="sub">Valores simulados conforme PROESP (opção A).</p>
+
+  <form id="form-motores">
+
+    <fieldset>
+      <legend>Capacidades Motoras</legend>
+
+      <div class="input-group">
+        <label for="medicine">Arremesso medicineball (m)</label>
+        <input id="medicine" type="number">
+        <small class="msg" id="msg-medicine"></small>
+      </div>
+
+      <div class="input-group">
+        <label for="salto">Salto horizontal (cm)</label>
+        <input id="salto" type="number">
+        <small class="msg" id="msg-salto"></small>
+      </div>
+
+      <div class="input-group">
+        <label for="abd">Abdominais 1 min (reps)</label>
+        <input id="abd" type="number">
+        <small class="msg" id="msg-abd"></small>
+      </div>
+
+      <div class="input-group">
+        <label for="corrida20">Velocidade 20m (s)</label>
+        <input id="corrida20" type="number" step="0.01">
+        <small class="msg" id="msg-corrida20"></small>
+      </div>
+
+      <div class="input-group">
+        <label for="agilidade">Teste do Quadrado (s)</label>
+        <input id="agilidade" type="number" step="0.01">
+        <small class="msg" id="msg-agilidade"></small>
+      </div>
+
+      <div class="input-group">
+        <label for="corrida6">Corrida 6 min (m)</label>
+        <input id="corrida6" type="number">
+        <small class="msg" id="msg-corrida6"></small>
+      </div>
+
+    </fieldset>
+
+    <button class="btn btn-primary" type="submit">Finalizar</button>
+    <button class="btn btn-sec" type="button" id="simular-motores">Simular</button>
+    <button class="btn btn-sec" type="button" id="back-antro">Voltar</button>
+  </form>
+
+  <div id="global"></div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
